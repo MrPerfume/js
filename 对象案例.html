@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>网页标题</title>
+	<meta name="keywords" content="关键字列表" />
+	<meta name="description" content="网页描述" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		//鼠标放上等开
+		//鼠标离开灯关
+		function kaideng(){
+			var obj=document.getElementById("d1");//获得id为d1的标签
+			obj.src="images/bulbon.gif";
+		}
+		function guandeng(){
+			var obj=document.getElementById("d1");//获得id为d1的标签
+			obj.src="images/bulboff.gif";
+		}
+	</script>
+</head>
+<body>
+<img id="d1" src="images/bulboff.gif" onmouseover="kaideng()" onmouseout="guandeng()">
+</body>
+</html>
